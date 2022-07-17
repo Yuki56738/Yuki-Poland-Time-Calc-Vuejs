@@ -1,9 +1,16 @@
 <template>
-  <p><button v-on:click="onClickButton()">Get Poland time</button></p>
-  <span>{{ $data.ptime }}</span>
+  <!--  <img alt="Vue logo" src="./assets/logo.png">-->
+  <!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <div id="app">
+    <p><button v-on:click="onClickButton()">Get Poland time</button></p>
+    <span>{{ $data.ptime }}</span>
+  </div>
 </template>
 
 <script>
+// import HelloWorld from './components/HelloWorld.vue'
+// eslint-disable-next-line no-unused-vars
+
 import axios from "axios";
 
 export default {
@@ -37,6 +44,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 50%;
 }
 </style>
